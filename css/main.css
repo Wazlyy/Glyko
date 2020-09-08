@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'moykoregular';
+    src: url('./fonts/moyko-webfont.woff2') format('woff2'),
+         url('./fonts/moyko-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  overflow: hidden;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    font-size: 15vw;
+    letter-spacing: 10px;
+    font-family: "Moyko";
+}
+
+
+
+.shadow { 
+    color: black; 
+    font: "Moyko";
+    text-shadow: 2px 2px #7c3ca7, 
+                 3px 3px #d89c19, 
+                 4px 4px #fe4902;
+    -webkit-transition: all 0.20s ease-out;
+    -moz-transition:    all 0.20s ease-out;
+    -ms-transition:     all 0.20s ease-out;
+    -o-transition:      all 0.20s ease-out;
+ }
+ .shadow:hover {
+    position: relative; 
+    top: -3px; 
+    left: -3px; 
+    text-shadow: 10px 10px #7c3ca7, 
+                 11px 11px #7c3ca7, 
+                 12px 12px #d89c19, 
+                 13px 13px #d89c19, 
+                 14px 14px #fe4902, 
+                 15px 15px #fe4902;
+ }
+
+.log{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+button{
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+button span{
+  position: relative;
+  z-index: 2;
+}
+
+button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:#7c3ca7;
+  transition: all .35s;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:hover:after{
+  width: 100%;
+}
+
